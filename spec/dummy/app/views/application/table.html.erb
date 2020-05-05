@@ -1,0 +1,22 @@
+<h1 class='govuk-heading-xl'>Hello!</h1>
+
+<%= govuk_table do |table| %>
+  <%= table.head do |head| %>
+    <%= head.row do |row| %>
+      <%= row.header 'Name' %>
+      <%= row.header 'Value' %>
+    <% end %>
+  <% end %>
+
+  <%= table.body do |body| %>
+    <%= body.row do |row| %>
+      <%= row.cell 'First column' %>
+      <%= row.cell 'Second column' %>
+    <% end %>
+
+    <%= body.row do |row| %>
+      <%= row.cell 'First column' %>
+      <%= row.cell 'Second column' %>
+    <% end %>
+  <% end %>
+<% end %>
